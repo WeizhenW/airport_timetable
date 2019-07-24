@@ -12,7 +12,7 @@ class TimeTable extends Component {
             method: 'GET',
             url: `http://airlabs.co/api/v7/timetable`,
             params: {
-                api_key: process.env.api_key,
+                // api_key: process.env.api_key,
                 iata_code: this.props.match.params.airport,
                 type: this.props.match.params.type
             }
@@ -24,8 +24,6 @@ class TimeTable extends Component {
             }
         )
     }
-
-
 
     render() {
         return (

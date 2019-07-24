@@ -5,9 +5,7 @@ class Home extends Component{
     airportList: ['MSP', 'CDG', 'SFO'],
   }
 
-  handleGetFlights = (airport, type) => {
-    this.history.push(`/${airport}/${type}`);
-  }
+
   render() {
   return (
     <div className="App">
